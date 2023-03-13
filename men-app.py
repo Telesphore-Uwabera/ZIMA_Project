@@ -1,6 +1,6 @@
-#this code is an AI driven appliction based on symptoms
-#Malaria=['headache', 'fever', 'flu']
-#Covid_19=['sore-throath', 'pink eyes', 'muscle and joint pain']
+Malaria=['headache', 'fever', 'flu']
+Covid_19=['sore-throat', 'pink eyes', 'muscle and joint pain']
+Cholera=['diarrhea', 'nausea', 'vomiting']
 
 while True:
     Q_1=input('Are you sick??(y/n):')
@@ -11,7 +11,7 @@ while True:
         Q_2=input('Do you feel feverish, cold, Headache, flu? (y/n):')
         if Q_2.casefold()== 'y':
             print('You show symptoms of Malaria')
-            Q_3=input('Do you want to see a doctor??(y/n):')
+            Q_3=input('Do you wish to see a doctor??(y/n):')
             if Q_3.casefold()=='y':
                 print('Link to a doctor')
                 quit()
@@ -19,18 +19,28 @@ while True:
                 print('Thank you for using Zima')
                 quit()
         else:
-            break
-while True:
-    Q_4=input('do you feel muscle and joint pains, pink eyes, sore-throath??(y/n):')
-    if Q_4=='y':
-        print('You have symptoms of Covid_19')
-        Q_5=input('do you want to see a doctor??(y/n):')
-        if Q_5.casefold()=='y':
-            print('link to a doctor')
-            quit()
-        else:
-            print('thank you for using ZIMA')
-    else:
-        print('Thank you for using ZIMA')
-        break
-quit()
+            Q_4=input('Do you feel muscle and joint pains, pink eyes, sore-throat??(y/n):')
+            if Q_4.casefold()=='y':
+                print('You have symptoms of Covid_19')
+                Q_5=input('Do you wish to see a doctor??(y/n):')
+                if Q_5.casefold()=='y':
+                    print('Link to a doctor')
+                    quit()
+                else:
+                    print('Thank you for using ZIMA')
+                    quit()
+            else:
+                Q_6=input('Do you have diarrhea, nausea or vomiting? (y/n):')
+                if Q_6.casefold()=='y':
+                    print('You have symptoms of Cholera')
+                    Q_7=input('Do you wish to see a doctor??(y/n):')
+                    if Q_7.casefold()=='y':
+                        print('Link to a doctor')
+                        quit()
+                    else:
+                        print('Thank you for using ZIMA')
+                        quit()
+                else:
+                    print('Sorry, we could not diagnose your symptoms')
+                    quit()
+
