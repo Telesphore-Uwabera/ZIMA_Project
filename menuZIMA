@@ -1,4 +1,4 @@
-Malaria=['headache', 'fever', 'flu']
+'''Malaria=['headache', 'fever', 'flu']
 Covid_19=['sore-throat', 'pink eyes', 'muscle and joint pain']
 Cholera=['diarrhea', 'nausea', 'vomiting']
 
@@ -42,4 +42,4 @@ while True:
                         quit()
                 else:
                     print('Sorry, we could not diagnose your symptoms')
-                    quit()
+                    quit()'''
