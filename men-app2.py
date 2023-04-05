@@ -2,16 +2,18 @@
 import webbrowser
 from login import my_cursor
 
-database=my_cursor.fetchall()
+database = my_cursor.fetchall()
+
+
 def check_login(name, passwd):
-    new= database
+    new = database
     for user in new:
         if name in user and passwd in user:
             # Return the password if the name is found
             return True
 
-print('WELCOME TO ZIMA')
 
+print('WELCOME TO ZIMA')
 
 while True:
     try:
@@ -22,6 +24,7 @@ while True:
             break
     except ValueError:
         print("Invalid input. Please input 'y' or 'n'.")
+
 if login == 'y':
     while True:
         try:
@@ -37,15 +40,21 @@ if login == 'y':
                 if choice == 'try again':
                     continue
                 elif choice == 'visit':
-                    print("Thank you")
-                    quit()
+                    print('Please, visit the login page.')
+                    raise AttributeError(' Goodbye!')
                 else:
                     print("Invalid input, please try again.")
+        except AttributeError as a:
+            print(a)
+            quit()# quit the programe here
         except:
             print("Wrong input, please try again")
+        
+
 elif login == 'n':
     print("Please visit the sign in page to register")
-    quit()
+    quit()  # quit the program
+
 else:
     raise ValueError("Invalid input, please try again.")
 
