@@ -31,4 +31,5 @@ print('Your information succesfully received')
 my_cursor.execute("INSERT INTO user_login (NAME, PASSWORD, EMAIL, AGE, DATE_CREATED) VALUES (%s,%s,%s,%s,%s)", (name, passwd, email, age, datetime.now()))
 db.commit()'''
 #these lines of code are commented in order to avoid execution that may disrupt the menu app
+
 my_cursor.execute("SELECT * FROM user_login")

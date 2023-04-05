@@ -73,10 +73,8 @@ SYMPTOMS = {
 }
 
 # Ask the user to choose a symptom.
-# Ask the user to choose a symptom.
 while True:
     print('Please choose a list of symptoms:')
-    print('Please choose a symptom:')
     for i, symptom in enumerate(SYMPTOMS.keys()):
         print(f'{i+1}. {symptom}')
     try:
@@ -92,14 +90,6 @@ description = SYMPTOMS[symptom]['description']
 print(f'You may have {illness}.')
 print(description)
 
-# Prompt the user with the name of the illness and its description.
-illness = SYMPTOMS[symptom]['illness']
-description = SYMPTOMS[symptom]['description']
-print(f'You may have {illness}.')
-print(description)
-print(description)
-
-# Ask the user if they want to learn more or see a doctor.
 # Ask the user if they want to learn more or see a doctor.
 while True:
     choice = input('Do you want to learn more about your illness or see a doctor? (learn/doctor/none) ').casefold()
