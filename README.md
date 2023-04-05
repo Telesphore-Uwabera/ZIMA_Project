@@ -1,1 +1,1 @@
-Urbanization&health
+The ZIMA app is a school work  project performed by  Negpod 6 from the BSE/september 22 intake. ZIMA is an app tha helps the user to diagnose the illness he/she has.Negpod 6 chose this app in relation o the GCGOs it has chosen(Healthcare and Urbanisation). We have also used the knowledge acquired from our first trimester regarding shell,python and SQL languages. The main contributors to this project are Telesphore Uwabera, Isaiah Essien,Pascal Onuaha ,Smart Israel, Adoris Beni, Shema Pacifique, Nyampinga Joselyne and Derrick Mwanzia.
